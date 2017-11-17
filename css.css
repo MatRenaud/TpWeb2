@@ -1,5 +1,6 @@
 body{
   background-color:#4B3E3E;
+  text-align:center;
 }
 
 td{
@@ -39,6 +40,7 @@ div#cup{
   display:block;
   border-bottom-left-radius:2em;
   border-bottom-right-radius:2em;
+  border-top-left-radius:2em;
   margin-left:40%;
   margin-right:50%;
   margin-top:30vh;
@@ -48,6 +50,7 @@ div#coffee{
   margin-top:px;
   border-bottom-right-radius:2em;
   border-bottom-left-radius:2em;
+  border-top-left-radius:2em;
 }
 
 td{
@@ -76,13 +79,13 @@ div#bothandle{
 }
 
 div#midhandle{
-  height:105px;
+  height:110px;
   width:20px;
   border-bottom-right-radius:2em;
   border-top-right-radius:2em;
   float:right;
   position:absolute;
-  top:46vh;
+  top:45vh;
   left:128.5vh;
 }
 .cupoutside{
@@ -90,5 +93,10 @@ div#midhandle{
 }
 
 .tabledatas{
-  background-color:black;
+  background-color:gray;
+}
+
+div#colors{
+  margin-top:50px;
+  margin-right:40px;
 }
