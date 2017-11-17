@@ -15,6 +15,12 @@
 <div id="coffee" class="cupoutside">
   <table>
     <tr>
+      <td class="tabledatas" id="td7"></td>
+    </tr>
+    <tr>
+      <td class="tabledatas" id="td6"></td>
+    </tr>
+    <tr>
       <td class="tabledatas" id="td5"></td>
     </tr>
     <tr>
@@ -39,13 +45,32 @@
 
 <div id="colors">
 <label for="outsidecolor">Couleur extérieur</label>
-<input type="text" id="outsidecolor"></input>
-<label for="insidecolor">Couleur extérieur</label>
-<input type="text" id="insidecolor"></input>
+<select id="outsidecolor" class="selects">
+    <option>Blanc</option>
+    <option>Bleu</option>
+    <option>Rouge</option>
+    <option>Vert</option>
+    <option>Jaune</option>
+    <option>Noir</option>
+</select>
+<label for="insidecolor" id="labeloutsidecolor">Couleur extérieur</label>
+<select id="insidecolor" class="selects">
+    <option>Blanc</option>
+    <option>Bleu</option>
+    <option>Rouge</option>
+    <option>Vert</option>
+    <option>Jaune</option>
+    <option>Noir</option>
+</select>
 </div>
 
-<input type="button" id="" class="buttons" Value="">
-
+<input type="button" id="Create" class="buttons" Value="Créer la tasse">
+<input type="button" id="Fill" class="buttons" Value="Remplir la tasse">
+<input type="button" id="Sip" class="buttons" Value="Prendre une gorgée">
+<input type="button" id="Add" class="buttons" Value="Ajouter café">
+<input type="button" id="Empty" class="buttons" Value="Vider la tasse">
+<input type="button" id="Destroy" class="buttons" Value="Détruire la tasse">
+<input type="button" id="About" class="buttons" Value="À propos">
 
 </body>
 

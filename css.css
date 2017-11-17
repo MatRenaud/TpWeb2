@@ -4,8 +4,8 @@ body{
 }
 
 td{
-  height:50px;
-  width:200px;
+  height:15px;
+  width:100px;
 }
 
 table{
@@ -22,28 +22,25 @@ input#input{
 }
 
 .buttons{
-
+  width:75vh;
+  margin:3vh;
 }
 td#td1{
   border-bottom-left-radius:2em;
   border-bottom-right-radius:1em;
 }
 
-td#td5{
-
-}
-
 div#cup{
   border-style:black,1px;
-  height:305px;
-  width:230px;
+  height:120px;
+  width:130px;
   display:block;
   border-bottom-left-radius:2em;
   border-bottom-right-radius:2em;
   border-top-left-radius:2em;
-  margin-left:40%;
+  margin-left:43%;
   margin-right:50%;
-  margin-top:30vh;
+  margin-top:15vh;
 }
 
 div#coffee{
@@ -59,30 +56,30 @@ td{
 }
 
 div#tophandle{
-  height:20px;
-  width:74px;
+  height:10px;
+  width:40px;
   border-top-right-radius:2em;
   position:absolute;
-  right: -74px;
+  right: -40px;
   top: 25%;
 }
 
 div#bothandle{
-  height:20px;
-  width:70px;
+  height:10px;
+  width:40px;
   border-bottom-right-radius:2em;
   position:absolute;
-  right: -70px;
-  top:55%;
+  right: -40px;
+  top:57%;
 }
 
 div#midhandle{
-  height:110px;
-  width:20px;
+  height:56px;
+  width:10px;
   border-bottom-right-radius:2em;
   border-top-right-radius:2em;
   position:absolute;
-  right: -74px;
+  right: -40px;
   top:25%;
 }
 .cupoutside{
@@ -96,4 +93,8 @@ div#midhandle{
 div#colors{
   margin-top:50px;
   margin-right:40px;
+}
+
+label#labeloutsidecolor{
+  margin-left:10vh;
 }
