@@ -48,6 +48,7 @@ div#coffee{
   margin-top:px;
   border-bottom-right-radius:2em;
   border-bottom-left-radius:2em;
+  position: relative;
 }
 
 td{
@@ -59,20 +60,18 @@ div#tophandle{
   height:20px;
   width:74px;
   border-top-right-radius:2em;
-  float:right;
   position:absolute;
-  top:45vh;
-  left:120vh;
+  right: -74px;
+  top: 25%;
 }
 
 div#bothandle{
   height:20px;
   width:70px;
   border-bottom-right-radius:2em;
-  float:right;
   position:absolute;
-  top:60vh;
-  left:120vh;
+  right: -70px;
+  top:55%;
 }
 
 div#midhandle{
@@ -80,10 +79,9 @@ div#midhandle{
   width:20px;
   border-bottom-right-radius:2em;
   border-top-right-radius:2em;
-  float:right;
   position:absolute;
-  top:46vh;
-  left:128.5vh;
+  right: -74px;
+  top:25%;
 }
 .cupoutside{
   background-color:white;
