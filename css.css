@@ -97,3 +97,7 @@ div#colors{
   margin-top:50px;
   margin-right:40px;
 }
+
+label#labeloutsidecolor{
+  margin-left:10vh;
+}
