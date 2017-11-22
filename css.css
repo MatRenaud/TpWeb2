@@ -1,6 +1,7 @@
 body{
-  background-color:#4B3E3E;
+  background-color:#1C0702;
   text-align:center;
+
 }
 
 td{
@@ -22,8 +23,16 @@ input#input{
 }
 
 .buttons{
-  width:75vh;
+  width:50vh;
   margin:3vh;
+  background-color:gray;
+  border-radius:1em;
+}
+
+.buttons:hover{
+  background-color:orange;
+  color:white;
+
 }
 td#td1{
   border-bottom-left-radius:2em;
@@ -40,7 +49,7 @@ div#cup{
   border-top-left-radius:2em;
   margin-left:43%;
   margin-right:50%;
-  margin-top:15vh;
+  margin-top:10vh;
 }
 
 div#coffee{
@@ -55,7 +64,35 @@ td{
 
 }
 
-div#tophandle{
+div#leftytophandle{
+  height:10px;
+  width:40px;
+  border-top-left-radius:2em;
+  position:absolute;
+  right: 130px;
+  top: 25%;
+}
+
+div#leftybothandle{
+  height:10px;
+  width:40px;
+  border-bottom-left-radius:2em;
+  position:absolute;
+  right: 130px;
+  top:57%;
+}
+
+div#leftymidhandle{
+  height:56px;
+  width:10px;
+  border-bottom-left-radius:2em;
+  border-top-left-radius:2em;
+  position:absolute;
+  right: 160px;
+  top:25%;
+}
+
+div#rightytophandle{
   height:10px;
   width:40px;
   border-top-right-radius:2em;
@@ -64,7 +101,7 @@ div#tophandle{
   top: 25%;
 }
 
-div#bothandle{
+div#rightybothandle{
   height:10px;
   width:40px;
   border-bottom-right-radius:2em;
@@ -73,7 +110,7 @@ div#bothandle{
   top:57%;
 }
 
-div#midhandle{
+div#rightymidhandle{
   height:56px;
   width:10px;
   border-bottom-right-radius:2em;
@@ -95,6 +132,49 @@ div#colors{
   margin-right:40px;
 }
 
+div#cupNumber{
+  display:inline;
+  color:white;
+  padding-top:20px;
+}
+
+div#price{
+  display:inline;
+  color:white;
+}
+
+div#clock{
+  height:50px;
+  width:100px;
+  background-color:white;
+  position:absolute;
+  top:0px;
+  left:-350px;
+}
+
+div#timer{
+  height:50px;
+  width:100px;
+  background-color:white;
+  position:absolute;
+  top:0px;
+  left:350px;
+}
+
+label{
+  color:white;
+}
+
 label#labeloutsidecolor{
   margin-left:10vh;
+  margin-bottom:10vh;
+}
+
+select{
+  margin-bottom:10vh;
+}
+
+h2{
+  color:white;
+  margin-bottom:0px;
 }

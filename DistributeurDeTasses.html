@@ -11,66 +11,82 @@
 <body onload="init()">
 
 
+  <h2>Distributrice de café Javazza</h2>
 <div id="cup" class="cupoutside">
-<div id="coffee" class="cupoutside">
-  <table>
-    <tr>
-      <td class="tabledatas" id="td7"></td>
-    </tr>
-    <tr>
-      <td class="tabledatas" id="td6"></td>
-    </tr>
-    <tr>
-      <td class="tabledatas" id="td5"></td>
-    </tr>
-    <tr>
-      <td class="tabledatas" id="td4"></td>
-    </tr>
-    <tr>
-      <td class="tabledatas" id="td3"></td>
-    </tr>
-    <tr>
-      <td class="tabledatas" id="td2"></td>
-    </tr>
-    <tr>
-      <td class="tabledatas" id="td1"></td>
-    </tr>
-  </table>
-  <div id="tophandle" class="cupoutside"></div>
-  <div id="midhandle" class="cupoutside"></div>
-  <div id="bothandle" class="cupoutside"></div>
-</div>
+  <div id="coffee" class="cupoutside">
+    <table>
+      <tr>
+        <td class="tabledatas" id="td7"></td>
+      </tr>
+      <tr>
+        <td class="tabledatas" id="td6"></td>
+      </tr>
+      <tr>
+        <td class="tabledatas" id="td5"></td>
+      </tr>
+      <tr>
+        <td class="tabledatas" id="td4"></td>
+      </tr>
+      <tr>
+        <td class="tabledatas" id="td3"></td>
+      </tr>
+      <tr>
+        <td class="tabledatas" id="td2"></td>
+      </tr>
+      <tr>
+        <td class="tabledatas" id="td1"></td>
+      </tr>
+    </table>
+
+    <div id="clock">Clock</div>
+    <div id="timer">Timer</div>
+
+    <div id="leftytophandle" class="cupoutside"></div>
+    <div id="leftymidhandle" class="cupoutside"></div>
+    <div id="leftybothandle" class="cupoutside"></div>
+    <div id="rightytophandle" class="cupoutside"></div>
+    <div id="rightymidhandle" class="cupoutside"></div>
+    <div id="rightybothandle" class="cupoutside"></div>
+
+
+  </div>
+
+  <div id="cupNumber">Tasse no:</div>
+  <div id="price">Prix:0.00$</div>
+
 </div>
 
 
 <div id="colors">
-<label for="outsidecolor">Couleur extérieur</label>
-<select id="outsidecolor" class="selects">
+  <label for="outsidecolor">Couleur extérieur</label>
+  <select id="outsidecolor" class="selects">
     <option>Blanc</option>
     <option>Bleu</option>
     <option>Rouge</option>
     <option>Vert</option>
     <option>Jaune</option>
     <option>Noir</option>
-</select>
-<label for="insidecolor" id="labeloutsidecolor">Couleur extérieur</label>
-<select id="insidecolor" class="selects">
+  </select>
+  <label for="insidecolor" id="labeloutsidecolor">Couleur intérieur</label>
+  <select id="insidecolor" class="selects">
     <option>Blanc</option>
     <option>Bleu</option>
     <option>Rouge</option>
     <option>Vert</option>
     <option>Jaune</option>
     <option>Noir</option>
-</select>
+  </select>
 </div>
 
 <input type="button" id="Create" class="buttons" Value="Créer la tasse">
 <input type="button" id="Fill" class="buttons" Value="Remplir la tasse">
 <input type="button" id="Sip" class="buttons" Value="Prendre une gorgée">
-<input type="button" id="Add" class="buttons" Value="Ajouter café">
+<input type="button" id="Add" class="buttons" Value="Ajouter du café">
 <input type="button" id="Empty" class="buttons" Value="Vider la tasse">
 <input type="button" id="Destroy" class="buttons" Value="Détruire la tasse">
+<input type="button" id="About" class="buttons" Value="Gaucher">
 <input type="button" id="About" class="buttons" Value="À propos">
+<input type="button" id="About" class="buttons" Value="Droitier">
 
 </body>
 
