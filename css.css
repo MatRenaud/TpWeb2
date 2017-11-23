@@ -10,7 +10,6 @@ td{
 }
 
 table{
-  border-color:blue;
   margin-top:10px;
   margin-bottom:50px;
   border-bottom-left-radius:2em;
@@ -50,6 +49,7 @@ div#cup{
   margin-left:43%;
   margin-right:50%;
   margin-top:10vh;
+  visibility: hidden;
 }
 
 div#coffee{
@@ -132,13 +132,13 @@ div#colors{
   margin-right:40px;
 }
 
-div#cupNumber{
+div#cupNumberDiv{
   display:inline;
   color:white;
   padding-top:20px;
 }
 
-div#price{
+div#priceDiv{
   display:inline;
   color:white;
 }
@@ -178,3 +178,8 @@ h2{
   color:white;
   margin-bottom:0px;
 }
+
+.left-handle {
+  visibility: hidden;
+}
+

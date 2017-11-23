@@ -1,93 +1,88 @@
 <!DOCTYPE html>
-<!-- NOM DU FICHIER:  template.html -->
 <html>
-
-<head>
-<meta charset="UTF-8">
-<title>TITRE</title>
-<link rel="stylesheet" href="css.css">
-<script src ="javascript.js"></script>
+  <head>
+  <meta charset="UTF-8">
+  <title>TITRE</title>
+  <link rel="stylesheet" href="css.css">
 </head>
 <body onload="init()">
-
-
   <h2>Distributrice de café Javazza</h2>
-<div id="cup" class="cupoutside">
-  <div id="coffee" class="cupoutside">
-    <table>
-      <tr>
-        <td class="tabledatas" id="td7"></td>
-      </tr>
-      <tr>
-        <td class="tabledatas" id="td6"></td>
-      </tr>
-      <tr>
-        <td class="tabledatas" id="td5"></td>
-      </tr>
-      <tr>
-        <td class="tabledatas" id="td4"></td>
-      </tr>
-      <tr>
-        <td class="tabledatas" id="td3"></td>
-      </tr>
-      <tr>
-        <td class="tabledatas" id="td2"></td>
-      </tr>
-      <tr>
-        <td class="tabledatas" id="td1"></td>
-      </tr>
-    </table>
+  <div id="cup" class="cupoutside">
+    <div id="coffee" class="cupoutside">
+      <table id="main-table">
+        <tr>
+          <td class="tabledatas" id="td7"></td>
+        </tr>
+        <tr>
+          <td class="tabledatas" id="td6"></td>
+        </tr>
+        <tr>
+          <td class="tabledatas" id="td5"></td>
+        </tr>
+        <tr>
+          <td class="tabledatas" id="td4"></td>
+        </tr>
+        <tr>
+          <td class="tabledatas" id="td3"></td>
+        </tr>
+        <tr>
+          <td class="tabledatas" id="td2"></td>
+        </tr>
+        <tr>
+          <td class="tabledatas" id="td1"></td>
+        </tr>
+      </table>
 
-    <div id="clock">Clock</div>
-    <div id="timer">Timer</div>
+      <div id="clock">Clock</div>
+      <div id="timer">Timer</div>
 
-    <div id="leftytophandle" class="cupoutside"></div>
-    <div id="leftymidhandle" class="cupoutside"></div>
-    <div id="leftybothandle" class="cupoutside"></div>
-    <div id="rightytophandle" class="cupoutside"></div>
-    <div id="rightymidhandle" class="cupoutside"></div>
-    <div id="rightybothandle" class="cupoutside"></div>
+      <div id="leftytophandle" class="cupoutside left-handle"></div>
+      <div id="leftymidhandle" class="cupoutside left-handle"></div>
+      <div id="leftybothandle" class="cupoutside left-handle"></div>
+      <div id="rightytophandle" class="cupoutside right-handle"></div>
+      <div id="rightymidhandle" class="cupoutside right-handle"></div>
+      <div id="rightybothandle" class="cupoutside right-handle"></div>
 
+
+    </div>
+
+    <div id="cupNumberDiv">Tasse no: <span id="cupNumber"></span></div><br>
+    <div id="priceDiv">Prix: <span id="price">0.00</span>$</div>
 
   </div>
 
-  <div id="cupNumber">Tasse no:</div>
-  <div id="price">Prix:0.00$</div>
 
-</div>
+  <div id="colors">
+    <label for="outsidecolor">Couleur extérieur</label>
+    <select id="outsidecolor" class="selects">
+      <option value="white">Blanc</option>
+      <option value="blue">Bleu</option>
+      <option value="red">Rouge</option>
+      <option value="green">Vert</option>
+      <option value="yellow">Jaune</option>
+      <option value="black">Noir</option>
+    </select>
+    <label for="insidecolor" id="labeloutsidecolor">Couleur intérieur</label>
+    <select id="insidecolor" class="selects">
+      <option value="white">Blanc</option>
+      <option value="blue">Bleu</option>
+      <option value="red">Rouge</option>
+      <option value="green">Vert</option>
+      <option value="yellow">Jaune</option>
+      <option value="black">Noir</option>
+    </select>
+  </div>
 
-
-<div id="colors">
-  <label for="outsidecolor">Couleur extérieur</label>
-  <select id="outsidecolor" class="selects">
-    <option>Blanc</option>
-    <option>Bleu</option>
-    <option>Rouge</option>
-    <option>Vert</option>
-    <option>Jaune</option>
-    <option>Noir</option>
-  </select>
-  <label for="insidecolor" id="labeloutsidecolor">Couleur intérieur</label>
-  <select id="insidecolor" class="selects">
-    <option>Blanc</option>
-    <option>Bleu</option>
-    <option>Rouge</option>
-    <option>Vert</option>
-    <option>Jaune</option>
-    <option>Noir</option>
-  </select>
-</div>
-
-<input type="button" id="Create" class="buttons" Value="Créer la tasse">
-<input type="button" id="Fill" class="buttons" Value="Remplir la tasse">
-<input type="button" id="Sip" class="buttons" Value="Prendre une gorgée">
-<input type="button" id="Add" class="buttons" Value="Ajouter du café">
-<input type="button" id="Empty" class="buttons" Value="Vider la tasse">
-<input type="button" id="Destroy" class="buttons" Value="Détruire la tasse">
-<input type="button" id="About" class="buttons" Value="Gaucher">
-<input type="button" id="About" class="buttons" Value="À propos">
-<input type="button" id="About" class="buttons" Value="Droitier">
-
+  <input type="button" id="create" class="buttons" Value="Créer la tasse">
+  <input type="button" id="fill" class="buttons" Value="Remplir la tasse">
+  <input type="button" id="sip" class="buttons" Value="Prendre une gorgée">
+  <input type="button" id="add" class="buttons" Value="Ajouter du café">
+  <input type="button" id="empty" class="buttons" Value="Vider la tasse">
+  <input type="button" id="destroy" class="buttons" Value="Détruire la tasse">
+  <input type="button" id="gaucher" class="buttons" Value="Gaucher">
+  <input type="button" id="about" class="buttons" Value="À propos">
+  <input type="button" id="droitier" class="buttons" Value="Droitier">
+  <script src ="app.js"></script>
 </body>
 
 </html>
