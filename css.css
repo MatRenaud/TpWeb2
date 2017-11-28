@@ -1,7 +1,8 @@
 body{
   background-color:#1C0702;
   text-align:center;
-
+  font-family: sans-serif;
+  font-weight: 200;
 }
 
 td{
@@ -28,7 +29,7 @@ input#input{
   border-radius:1em;
 }
 
-.buttons:hover{
+.buttons:hover:enabled{
   background-color:orange;
   color:white;
 
@@ -144,21 +145,35 @@ div#priceDiv{
 }
 
 div#clock{
-  height:50px;
-  width:100px;
-  background-color:white;
+  height:7em;
+  width:10em;
+  background-color:rgba(255, 255, 255, 0.3);
   position:absolute;
-  top:0px;
-  left:-350px;
+  top:15vh;
+  left:15vh;
+  border-radius: 0.5em;
+  padding: 1em;
+  color: white;
+  font-size: 20px;
+}
+
+#currentClock {
+  display: block;
+  margin-top: 20%;
+  font-size: 30px;
 }
 
 div#timer{
-  height:50px;
-  width:100px;
-  background-color:white;
+  font-size: 20px;
+  height:7em;
+  width:10em;
+  background-color:rgba(255,255, 255, 0.3);
   position:absolute;
-  top:0px;
-  left:350px;
+  top:15vh;
+  right:15vh;
+  border-radius: 0.5em;
+  padding: 1em;
+  color: white;
 }
 
 label{
@@ -182,4 +197,3 @@ h2{
 .left-handle {
   visibility: hidden;
 }
-

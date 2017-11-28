@@ -6,6 +6,14 @@
   <link rel="stylesheet" href="css.css">
 </head>
 <body onload="init()">
+  <div id="clock">Clock
+    <span id="currentClock">
+      <span id="hour-hand"></span>:
+      <span id="min-hand"></span>:
+      <span id="second-hand"></span>
+    </span>
+  </div>
+  <div id="timer">Timer<span id="currentTime"></span></div>
   <h2>Distributrice de café Javazza</h2>
   <div id="cup" class="cupoutside">
     <div id="coffee" class="cupoutside">
@@ -32,18 +40,12 @@
           <td class="tabledatas" id="td1"></td>
         </tr>
       </table>
-
-      <div id="clock">Clock</div>
-      <div id="timer">Timer</div>
-
       <div id="leftytophandle" class="cupoutside left-handle"></div>
       <div id="leftymidhandle" class="cupoutside left-handle"></div>
       <div id="leftybothandle" class="cupoutside left-handle"></div>
       <div id="rightytophandle" class="cupoutside right-handle"></div>
       <div id="rightymidhandle" class="cupoutside right-handle"></div>
       <div id="rightybothandle" class="cupoutside right-handle"></div>
-
-
     </div>
 
     <div id="cupNumberDiv">Tasse no: <span id="cupNumber"></span></div><br>
