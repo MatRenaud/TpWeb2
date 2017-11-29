@@ -3,17 +3,23 @@
   <head>
   <meta charset="UTF-8">
   <title>TITRE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="css.css">
 </head>
 <body onload="init()">
-  <div id="clock">Clock
+  <div id="clock">Horloge
     <span id="currentClock">
       <span id="hour-hand"></span>:
       <span id="min-hand"></span>:
       <span id="second-hand"></span>
     </span>
   </div>
-  <div id="timer">Timer<span id="currentTime"></span></div>
+  <div id="timer">Temps d'utilisation
+    <span id="currentTime">
+      <span id="sec-timer">0</span>
+    </span>
+  </div>
   <h2>Distributrice de café Javazza</h2>
   <div id="cup" class="cupoutside">
     <div id="coffee" class="cupoutside">

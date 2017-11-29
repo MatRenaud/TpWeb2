@@ -197,3 +197,53 @@ h2{
 .left-handle {
   visibility: hidden;
 }
+
+div#timer{
+  height:7em;
+  width:10em;
+  background-color:rgba(255, 255, 255, 0.3);
+  position:absolute;
+  top:15vh;
+  right:15vh;
+  border-radius: 0.5em;
+  padding: 1em;
+  color: white;
+  font-size: 20px;
+}
+
+#currentTime {
+  display: block;
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+/* About Us Page */
+.about-us-div {
+  position: fixed;
+  color: white;
+  width: 80vw;
+  height: 80vh;
+  top: 10vh;
+  left: 10vw;
+  z-index: 999;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 0.5em;
+  box-shadow: 0 0 30px black;
+}
+
+.about-us-title {
+  margin-top: 25%;
+  font-size: 30px;
+}
+
+.close-about-us {
+  float: right;
+  margin-right: 1em;
+  margin-top: 0.6em;
+  transition: all 0.3s ease-out;
+}
+
+.close-about-us:hover {
+  transform: rotate(360deg) scale(1.2);
+  cursor: pointer;
+}

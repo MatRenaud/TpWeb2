@@ -16,9 +16,11 @@ var btnEmptyCup = document.getElementById('empty');
 var btnDestroy = document.getElementById('destroy');
 var btnGaucher = document.getElementById('gaucher');
 var btnDroitier = document.getElementById('droitier');
+var btnAbout = document.getElementById('about');
 
 
 //Selection du DOM
+var mainBody = document.body;
 var mainTable = document.getElementById('main-table')
 var cupDiv = document.getElementById('cup');
 var outsideCup = document.getElementsByClassName('cupoutside');
@@ -37,18 +39,21 @@ function init() {
   btnDestroy.addEventListener('click', destroyCup);
   btnGaucher.addEventListener('click', switchSide);
   btnDroitier.addEventListener('click', switchSide);
+  btnAbout.addEventListener('click', openAboutUsPage);
   disableButtons();
 }
 
 function disableButtons() {
   for (var i=1; i < allButtons.length; i++) {
     allButtons[i].disabled = true;
+    btnAbout.disabled = false;
   }
 }
 
 function createCup() {
   if (cupDiv.style.visibility == '') {
     cupCounter();
+    layerCounter = 6;
     for (var i=0; i < outsideCup.length; i++) {
       outsideCup[i].style.backgroundColor = selectOutColor.value;
     }
@@ -163,13 +168,46 @@ function setDate() {
   var sec = now.getSeconds();
   var min = now.getMinutes();
   var hour = now.getHours();
-  if (sec < 11) {
+  if (sec < 10) {
     secHand.textContent = '0' + sec;
   } else {
     secHand.textContent = sec;
   }
-  minHand.textContent = min;
+  if (min < 10) {
+    minHand.textContent = '0' + min;
+  } else {
+    minHand.textContent = min;
+  }
   hourHand.textContent = hour;
 }
 
 setInterval(setDate, 1000);
+
+//Set Timer
+var minTimer = document.getElementById('min-timer');
+var secTimer = document.getElementById('sec-timer');
+
+function setTimer() {
+  secTimer.textContent = parseInt(secTimer.textContent) + 1;
+  if (secTimer.textContent == 60) {
+    secTimer.textContent = 0;
+  }
+}
+
+function setMin() {
+  minTimer.textContent = parseInt(minTimer.textContent) + 1;
+}
+setInterval(setTimer, 1000);
+
+//About Us Page
+function openAboutUsPage() {
+  var divAboutUs = document.createElement('div');
+  divAboutUs.classList.add('about-us-div');
+  divAboutUs.classList.add('animated');
+  divAboutUs.classList.add('fadeIn');
+  divAboutUs.innerHTML = '<i id="close-about" class="fa fa-times fa-3x close-about-us" aria-hidden="true"></i><h3 class="about-us-title">Fait par Maxime Blanchard et Mathieu Renaud</h3>';
+  mainBody.appendChild(divAboutUs);
+  document.getElementById('close-about').addEventListener('click', function() {
+    mainBody.removeChild(divAboutUs);
+  });
+}
